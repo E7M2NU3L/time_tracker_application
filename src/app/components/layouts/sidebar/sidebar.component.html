@@ -1,1 +1,51 @@
-<p>sidebar works!</p>
+<section class="w-full h-screen bg-slate-50 flex flex-col">
+    <!-- Header -->
+    <header class="min-h-[10vh] flex items-center px-4">
+        <a routerLink="/" class="flex items-center gap-2">
+            <img src="/random.png" alt="random" class="w-12 h-12" />
+            <h1 class="text-2xl md:block hidden font-semibold tracking-tight text-slate-900">
+                Toare
+            </h1>
+        </a>
+    </header>
+
+    <!-- Sidebar Links -->
+    <main class="flex-1 flex flex-col gap-1 px-2">
+        <a routerLink="/overview" class="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium tracking-tight text-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:ring hover:ring-slate-300 transition-all"
+            routerLinkActive="bg-slate-200">
+            <img src="/dashboard.svg" class="w-5 h-5" alt="Overview" />
+            Overview
+        </a>
+        <a routerLink="/time" class="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium tracking-tight text-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:ring hover:ring-slate-300 transition-all"
+            routerLinkActive="bg-slate-200">
+            <img src="/time.svg" class="w-5 h-5" alt="Tracker" />
+            Tracker
+        </a>
+        <a routerLink="/teams" class="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium tracking-tight text-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:ring hover:ring-slate-300 transition-all"
+            routerLinkActive="bg-slate-200">
+            <img src="/team.svg" class="w-5 h-5" alt="Teams" />
+            Teams
+        </a>
+        <a routerLink="/reports" class="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium tracking-tight text-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:ring hover:ring-slate-300 transition-all"
+            routerLinkActive="bg-slate-200">
+            <img src="/reports.svg" class="w-5 h-5" alt="Reports" />
+            Reports
+        </a>
+        <a routerLink="/projects" class="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium tracking-tight text-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:ring hover:ring-slate-300 transition-all"
+            routerLinkActive="bg-slate-200">
+            <img src="/projects.svg" class="w-5 h-5" alt="Projects" />
+            Projects
+        </a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="flex items-center justify-between px-4 py-3 bg-slate-100 border-t border-slate-300">
+        <button class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-700 border border-slate-500 rounded-lg hover:shadow-md active:scale-95 transition-all">
+            <img src="/profile.svg" class="w-5 h-5 text-white fill-white" alt="Profile" />
+        </button>
+        <button class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-red-500 border border-red-500 rounded-lg hover:bg-red-600 hover:shadow-md active:scale-95 transition-all">
+            <img src="/logout.svg" class="w-5 h-5" alt="Logout" />
+            Logout
+        </button>
+    </footer>
+</section>

@@ -1,23 +1,22 @@
 import { Injectable } from '@angular/core';
-import { ILoginUser } from '../../../models/inheritance/auth';
-import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../../environments/environment.development';
+import { HttpClient } from '@angular/common/http';
 import { Observable, catchError } from 'rxjs';
+import { IUpdateUser } from '../../../models/inheritance/auth';
 
 @Injectable({
   providedIn: 'root'
 })
-export class LoginService {
-
+export class ProfileService {
   endpoint = environment.API_AUTH_KEY;
   constructor(private http : HttpClient) {}
 
-  LoginUser (values : ILoginUser) : Observable<any> {
-    return this.http.post<any>(this.endpoint + "login", values, {
-      withCredentials : true,
+  FetchCurrentLoggedInUser() : Observable<any> {
+    return this.http.get<any>(this.endpoint + "profile", {
       headers : {
         'Content-Type': 'application/json'
-      }
+      },
+      withCredentials : true
     }).pipe(
       catchError((error) => {
         console.log(error);
@@ -31,12 +30,12 @@ export class LoginService {
     )
   }
 
-  LogoutUser () : Observable<any> {
-    return this.http.post<any>(this.endpoint + "logout", {}, {
-      withCredentials : true,
+  UpdateUser(values : IUpdateUser) : Observable<any> {
+    return this.http.put<any>(this.endpoint + "profile", values, {
       headers : {
         'Content-Type': 'application/json'
-      }
+      },
+      withCredentials : true
     }).pipe(
       catchError((error) => {
         console.log(error);

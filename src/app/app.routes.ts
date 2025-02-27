@@ -9,6 +9,10 @@ import { ResetPasswordComponent } from './components/auth/reset-password/reset-p
 import { ContactsComponent } from './components/root/contacts/contacts.component';
 import { FaqsComponent } from './components/root/faqs/faqs.component';
 import { TestimonialsComponent } from './components/root/testimonials/testimonials.component';
+import { OverviewComponent } from './components/overview/overview.component';
+import { TimerComponent } from './components/times/timer/timer.component';
+import { ReportsComponent } from './components/reports/reports/reports.component';
+import { ProjectsComponent } from './components/projects/projects/projects.component';
 
 export const routes: Routes = [
     {
@@ -50,5 +54,25 @@ export const routes: Routes = [
     {
         path : "reset-password",
         component : ResetPasswordComponent
+    },
+    {
+        path : "overview",
+        component : OverviewComponent
+    },
+    {
+        path : "teams",
+        component : TimerComponent
+    },
+    {
+        path : "time",
+        component : TimerComponent
+    },
+    {
+        path : "reports",
+        component : ReportsComponent
+    },
+    {
+        path : "projects",
+        component : ProjectsComponent
     }
 ];

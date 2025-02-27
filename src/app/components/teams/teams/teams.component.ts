@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { SidebarComponent } from '../../layouts/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-teams',
-  imports: [],
+  imports: [SidebarComponent],
   templateUrl: './teams.component.html',
   styleUrl: './teams.component.css'
 })
