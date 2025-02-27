@@ -1,28 +1,155 @@
 <app-navbar />
-<div class="bg-slate-50 min-h-[90vh] flex items-center justify-center py-16 px-6 md:px-12">
-    <div class="max-w-3xl w-full bg-white p-8 rounded-xl shadow-lg border border-slate-200">
-      <h2 class="text-5xl font-semibold text-slate-800 text-center mb-6">Contact Us</h2>
-      <p class="text-slate-600 text-center mb-8">Have any questions? Feel free to reach out to us.</p>
+<div class="bg-slate-50 min-h-[90vh] py-16 px-6 md:px-12 max-w-7xl mx-auto">
+    <main class="mb-12">
+      <main class="flex flex-col gap-1 max-w-xl mb-8">
+        <h1 class="text-5xl font-semibold tracking-tight">How can we help you?</h1>
+        <p class="text-lg font-medium text-slate-500 tracking-tight">search for your queries you may get answers...</p>
+        <input placeholder="type keywords to find answers" class="w-full mt-3 px-3 py-1 rounded-md placeholder:text-lg text-lg border border-slate-500" />
+      </main>
+
+      <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <main class="flex flex-col gap-3 p-6 shadow-lg hover:rotate-2 hover:scale-105 transition-all duration-200 ease-in-out max-w-sm justify-start items-start border border-slate-400">
+            <h2 class="text-3xl font-medium text-slate-900 tracking-tight">Account & Subscription</h2>
+            <ul class="list-none">
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">How do I reset my password?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">Can I switch between plans?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">How do I cancel my subscription?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">Is there a free trial available?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">How do I update my billing details?</li>
+            </ul>
+        </main>
+    
+        <main class="flex flex-col gap-3 p-6 shadow-lg hover:rotate-2 hover:scale-105 transition-all duration-200 ease-in-out max-w-sm justify-start items-start border border-slate-400">
+            <h2 class="text-3xl font-medium text-slate-900 tracking-tight">Using Taore</h2>
+            <ul class="list-none">
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">How do I start tracking my time?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">Can I integrate Taore with other tools?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">How do I generate reports for my tracked time?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">Can I invite team members to my workspace?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">How do I set up project-based time tracking?</li>
+            </ul>
+        </main>
+    
+        <main class="flex flex-col gap-3 p-6 shadow-lg hover:rotate-2 hover:scale-105 transition-all duration-200 ease-in-out max-w-sm justify-start items-start border border-slate-400">
+            <h2 class="text-3xl font-medium text-slate-900 tracking-tight">Technical Support</h2>
+            <ul class="list-none">
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">I'm experiencing sync issues. What should I do?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">Why isn’t my timer working properly?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">How do I recover lost time entries?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">Does Taore work offline?</li>
+                <li class="text-lg font-normal text-slate-600 hover:underline tracking-tight leading-tight whitespace-normal">Where can I report a bug?</li>
+            </ul>
+        </main>
+    </main>
+    
+    </main>
+
+    <main class="flex md:justify-between items-start md:items-center gap-6 mb-12 flex-col md:flex-row justify-start">
+      <main class="flex flex-col gap-1">
+        <h1 class="text-3xl font-medium text-slate-900 tracking-tight">Not what you were looking for?</h1>
+        <p class="text-sm font-normal text-slate-600 tracking-tight leading-tight whitespace-normal">Browse through all of our Help Center articles</p>
+      </main>
+
+      <a routerLink="/pricing" class="text-sm font-medium tracking-tight bg-slate-700 text-slate-50 px-4 py-1 rounded-md hover:bg-slate-900 active:translate-y-1 active:scale-95 transition-all duration-200 ease-in-out">Get Started</a>
+    </main>
+
+    <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <main class="col-span-1 flex flex-col gap-6">
+        <main class="flex flex-col gap-4">
+          <h1 class="text-3xl font-medium tracking-tight text-slate-800">Points of contact</h1>
+
+          <main class="flex flex-col">
+            <h1 class="text-lg font-medium tracking-tight text-slate-800">Taore HeadQuarters</h1>
+            <p class="text-xs font-medium text-slate-600 tracking-tight whitespace-normal leading-tight hover:underline max-w-sm">11350 McCormick Rd, EP III, Suite 200,
+              Hunt Valley, MD 21031
+              Information & Sales
+              sales.taore.com</p>
+          </main>
+
+          <main>
+            <h1 class="text-lg font-medium tracking-tight text-slate-800">Support</h1>
+            <p class="text-xs font-medium text-slate-600 tracking-tight whitespace-normal leading-tight hover:underline max-w-sm">support.taore.com</p>
+          </main>
+
+          <main>
+            <h1 class="text-lg font-medium tracking-tight text-slate-800">Verification of Employment</h1>
+            <p class="text-xs font-medium text-slate-600 tracking-tight whitespace-normal leading-tight hover:underline max-w-sm">hr.taore.com</p>
+          </main>
+        </main>
+
+        <main class="flex flex-col gap-4">
+          <h1 class="text-3xl font-medium tracking-tight text-slate-800">Our offices around the world</h1>
+          <main>
+            <h1 class="text-lg font-medium tracking-tight text-slate-800">Canada</h1>
+            <p class="text-xs font-medium text-slate-600 tracking-tight whitespace-normal leading-tight hover:underline max-w-sm">5333 Avenue Casgrain #1201,
+              Montréal, QC H2T 1X3</p>
+          </main>
+
+          <main>
+            <h1 class="text-lg font-medium tracking-tight text-slate-800">Germany</h1>
+            <p class="text-xs font-medium text-slate-600 tracking-tight whitespace-normal leading-tight hover:underline max-w-sm">Neue Schönhauser Str. 3-5,
+              10178 Berlin</p>
+          </main>
+
+          <main>
+            <h1 class="text-lg font-medium tracking-tight text-slate-800">France</h1>
+            <p class="text-xs font-medium text-slate-600 tracking-tight whitespace-normal leading-tight hover:underline max-w-sm">266 Place Ernest Granier,
+              34000 Montpellier</p>
+          </main>
+        </main>
+      </main>
+      <main class="md:col-span-2 col-span-1">
+        <h1 class="text-3xl font-medium text-slate-900 tracking-tight mb-6">Still Need Help?</h1>
+
+        <main class="flex flex-col gap-4">
+          <main class="space-y-1 grid grid-cols-1">
+            <label class="text-sm font-slate-600 font-medium ml-1 tracking-tight leading-tight whitespace-normal">
+                Email Address <span class="font-light">(so that we can reply to you)</span>
+            </label>
+            <input type="email" class="w-full py-1 rounded-md border border-slate-600 px-3 placeholder:text-sm text-sm" placeholder="Eg: johndoe@example.com" />
+        </main>
   
-      <form class="space-y-5">
-        <div>
-          <label class="text-slate-700 font-medium block mb-1">Your Name</label>
-          <input type="text" class="w-full px-4 py-3 border rounded-lg bg-slate-100 focus:ring-2 focus:ring-slate-400 outline-none" placeholder="Enter your name">
-        </div>
+        <main class="space-y-1 grid grid-cols-1">
+          <label class="text-sm font-slate-600 font-medium ml-1 tracking-tight leading-tight whitespace-normal">
+              Topic
+          </label>
+          <select type="email" class="w-full py-1 rounded-md border border-slate-600 px-3 placeholder:text-sm text-sm" placeholder="Select a Topic">
+            <option value="help-center">Help Center</option>
+            <option value="account-management">Account Management</option>
+            <option value="payment-issues">Payment Issues</option>
+            <option value="product-issues">Product Issues</option>
+            <option value="technical-issues">Technical Issues</option>
+            <option value="other">Other</option>
+          </select>
+        </main>
   
-        <div>
-          <label class="text-slate-700 font-medium block mb-1">Your Email</label>
-          <input type="email" class="w-full px-4 py-3 border rounded-lg bg-slate-100 focus:ring-2 focus:ring-slate-400 outline-none" placeholder="Enter your email">
-        </div>
+        <main class="space-y-1 grid grid-cols-1">
+          <label class="text-sm font-slate-600 font-medium ml-1 tracking-tight leading-tight whitespace-normal">
+              Subject
+          </label>
+          <input type="email" class="w-full py-1 rounded-md border border-slate-600 px-3 placeholder:text-sm text-sm" placeholder="let us know how we can help you" />
+        </main>
   
-        <div>
-          <label class="text-slate-700 font-medium block mb-1">Message</label>
-          <textarea rows="4" class="w-full px-4 py-3 border rounded-lg bg-slate-100 focus:ring-2 focus:ring-slate-400 outline-none" placeholder="Write your message"></textarea>
-        </div>
+        <main class="space-y-1 grid grid-cols-1">
+          <label class="text-sm font-slate-600 font-medium ml-1 tracking-tight leading-tight whitespace-normal">
+              Your Message
+          </label>
+          <textarea class="w-full py-1 rounded-md border border-slate-600 px-3 placeholder:text-sm text-sm" placeholder="type something here.."></textarea>
+
+          <main class="flex flex-row gap-2 items-center mt-2">
+            <input type="checkbox" class="h-4 w-4" />
+            <h1 class="text-xs font-medium text-slate-600 tracking-tight whitespace-normal leading-tight">
+              By submitting this form, you confirm that you have read and agree to our <span class="font-medium text-slate-900 hover:underline">Terms of Service</span> and <span class="font-medium text-slate-900 hover:underline">Privacy Statement</span>
+            </h1>
+          </main>
+        </main>
   
-        <button type="submit" class="w-full bg-slate-800 text-white font-semibold py-3 rounded-lg hover:bg-slate-700 transition">Send Message</button>
-      </form>
-    </div>
-  </div>
+       
+  
+        <button class="text-sm mt-3 font-medium tracking-tight bg-slate-700 text-slate-50 px-4 py-1 rounded-md hover:bg-slate-900 active:translate-y-1 active:scale-95 transition-all duration-200 ease-in-out">Get Started</button>
+        </main>
+      </main>
+    </main>
+</div>
   
 <app-footer />
